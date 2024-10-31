@@ -1,0 +1,118 @@
+body {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.light-theme {
+    background-color: #f3f3f3;
+    color: #333;
+}
+
+.theme-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* Warna tombol dan tampilan untuk tema gelap */
+.calculator {
+    background-color: #444;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 320px; /* Ukuran tetap */
+}
+
+.display {
+    background-color: #222;
+    color: white;
+    font-size: 2.5em; /* Ukuran font lebih besar */
+    text-align: right;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #555;
+    height: 80px; /* Tinggi tetap untuk tampilan */
+    overflow: hidden; /* Mencegah overflow teks */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.button {
+    background-color: #666;
+    color: white;
+    font-size: 1.5em;
+    padding: 15px; /* Padding yang lebih seimbang */
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s; /* Efek transisi saat hover */
+}
+
+.button:hover {
+    background-color: #777; /* Warna saat hover */
+}
+
+.button.orange {
+    background-color: #f90;
+}
+
+.button.red {
+    background-color: #f00;
+}
+
+.button.gray {
+    background-color: #888;
+}
+
+/* Warna tombol dan tampilan untuk tema terang */
+body.light-theme .calculator {
+    background-color: #fff;
+}
+
+body.light-theme .display {
+    background-color: #f3f3f3;
+    color: #333;
+    border-color: #ccc;
+}
+
+body.light-theme .button {
+    background-color: #ddd;
+    color: #333;
+}
+
+body.light-theme .button.orange {
+    background-color: #ffcc00;
+}
+
+body.light-theme .button.red {
+    background-color: #ff6666;
+}
+
+body.light-theme .button.gray {
+    background-color: #aaa;
+}
+
+.zero {
+    grid-column: span 2; /* Tombol 0 mengambil dua kolom */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 kolom */
+    gap: 10px;
+}
